@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prince Code Crust</title>
+  <title>Prince</title>
   <link rel="stylesheet" href="lstyle.css"> </head>
   <script src="crust.js"></script>
 
