@@ -1,0 +1,172 @@
+/* General styling */
+body {
+    font-family: sans-serif; /* Choose your preferred font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Adjust as needed */
+    color: #333; /* Adjust as needed */
+  }
+  
+  main {
+    max-width: 960px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center the content on desktop screens */
+    padding: 20px;
+  }
+  
+  /* Header */
+  header.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #333; /* Adjust as desired */
+    color: #fff; /* Adjust as desired */
+  }
+  
+  header.hero img {
+    width: 150px; /* Adjust as needed */
+    margin-right: 20px;
+  }
+  
+  header.hero h1 {
+    font-size: 36px; /* Adjust as needed */
+    margin-bottom: 0;
+  }
+  
+  .cta-button {
+    background-color: #007bff; /* Adjust as desired */
+    color: #fff; /* Adjust as desired */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Sections */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    font-size: 24px; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  /* Activities section */
+  .activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .activity {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ddf2fa; /* Adjust as desired */
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .activity img {
+    width: 300px; /* Adjust as needed */
+    margin-bottom: 10px;
+    border-radius: 20%;
+  }
+  
+  /* Team members section */
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .member {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #fad5d5;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Testimonials section */
+  blockquote {
+    border-left: 5px solid #ccc;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333; /* Adjust as desired */
+    color: #fff; /* Adjust as desired */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  h1 {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .cta-button:hover {
+    background-color: #f7bfbf;
+    transition: background-color 0.2s ease-in-out;
+  }
+/* Example for What We Do hover effect */
+.activity:hover {
+  background-color: #F0F0F0;
+  border: 1px solid #CCCCCC;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.activity a {
+  text-decoration: none;
+  cursor: default;
+}
+
+
+@keyframes quoteFade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+.team-members {
+  animation: slide-in 5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(100px); /* or another direction like X */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* or another direction like X */
+  }
+}
+.activities {
+  animation: pop-up 3s ease-in-out forwards;
+}
+
+@keyframes pop-up{
+  from {
+    opacity: 0;
+    transform: translateZ(100px); /* or another direction like X */
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0); /* or another direction like X */
+  }
+}
